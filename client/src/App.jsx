@@ -39,13 +39,13 @@ const App = () => {
   
   return (
     <div className="app-container">
-      <ul>
+      <div>
         {
           Object.keys(careerObjects).map((career, index, array) => {
             return <Card key={array[index]} career={careerObjects[career]}/>;
           })
         }
-      </ul>
+      </div>
     </div>
   );
 };

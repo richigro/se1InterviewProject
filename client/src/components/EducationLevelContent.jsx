@@ -14,7 +14,7 @@ const EducationLevelContent = ({ education }) => {
     <div className="education-block">
       <p className="education-level-text">{education.level}</p>
       <div className="percentage-bar-container">
-        <ProgressBar className="education-percentage-bar" variant="custom" now={percentage}/>
+        <ProgressBar className="education-percentage-bar" variant="custom" now={percentage} role="progressbar" aria-valuenow={percentage}  aria-label="progressbar"/>
       </div>
       <p className="percentage-number">{percentage}%</p>
     </div>
