@@ -1,11 +1,15 @@
 .card {
   max-width: 1200px;
+  min-width: 600px;
   height: auto;
   border: 1px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 20px;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: white;
+  padding: 10px;
 }
 
 .card:first-child {
@@ -28,11 +32,14 @@
 }
 
 .img-container {
+  border-radius: 6px;
+  border: 2px solid green;
+}
+
+.image {
   width: 150px;
   height: 150px;
-  border-radius: 6px;
-  /* padding: 20px 10px; */
-  border: 1px solid green;
+  padding: 10px;
 }
 
 .subCard-block-container {
@@ -43,5 +50,35 @@
 .subCard-block {
   border: 1px solid purple;
   display: inline-block;
-  margin: 0 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 800px){
+  .img-container {
+    display: none;
+  }
+
+  .card {
+    width: fit-content;
+    margin-left: 0;
+  }
+  @media (max-width: 600px){
+
+    .subCard-block-container {
+      flex-direction: column;
+    }
+
+    @media (max-width: 540px){
+      .card {
+        margin-left: 0;
+        min-width: 300px;
+      }
+      .subCard-block {
+        margin-left: 0;
+      }
+      @media (max-width: 480px){
+
+      } 
+    }
+  }
 }

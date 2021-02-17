@@ -28,7 +28,9 @@ const Card = ({ career }) => {
             <SubCardBlock topEntryLevelEducation={topEntryLevelEducation}/>
           </div>
         </div>
-        <img className="img-container" src={career.thumbnailUrl} alt={`Image of ${career.title}`}/>
+        <div className="img-container">
+          <img  className="image" src={career.thumbnailUrl} alt={`Image of ${career.title}`}/>
+        </div>
       </div>
     </div>
   );
