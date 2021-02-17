@@ -3,6 +3,9 @@ import React from 'react';
 //stylesheets
 import './Card.css';
 
+//Components
+import EducationLevel from './EducationLevel';
+
 const Card = ({ career }) => {
   console.log("career: ", career);
   // filters out education levels where the percentage is zero and return a new array and saved into variable
@@ -49,7 +52,7 @@ const Card = ({ career }) => {
             </div>
             <div className="block-content">
               {topEntryLevelEducation.map((education, index) => {
-                return <p key={index}>{education.level}</p>;
+                return <EducationLevel key={index} education={education}/>;
               })}
             </div>
           </div>
