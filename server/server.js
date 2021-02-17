@@ -7,6 +7,6 @@ const PORT = 3000;
 app.use(express.static('client/dist'));
 
 
-app.liesten(PORT, () => {
+app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
 });
