@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //Components
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-const EducationLevel = ({ education }) => {
+const EducationLevelContent = ({ education }) => {
   const percentage = Math.round(education.percent);
   return (
     <div className="education-block">
@@ -16,4 +16,4 @@ const EducationLevel = ({ education }) => {
   );
 };
 
-export default EducationLevel;
+export default EducationLevelContent;

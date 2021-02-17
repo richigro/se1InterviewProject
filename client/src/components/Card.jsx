@@ -4,8 +4,7 @@ import React from 'react';
 import './Card.css';
 
 //Components
-import EducationLevel from './EducationLevel';
-import SubCardHeader from './SubCardHeader';
+import SubCardBlock from './SubCardBlock';
 
 const Card = ({ career }) => {
   console.log("career: ", career);
@@ -28,38 +27,9 @@ const Card = ({ career }) => {
         <div className="subCard-block-container">
 
           {/* First sub Block with Median Salary info*/}
-          <div className="subCard-block">
-            {/*<div className="block-header">
-              <div className="icon-container">
-                <ion-icon name="cash-outline"></ion-icon>
-              </div>
-              <p className="header-block-text">Median Salary</p>
-            </div>*/}
-            <SubCardHeader salary={true}/>
-            <div className="block-content">
-              <div>
-                {/*Intl NumberFormat constrcutor */}
-                <p>${ new Intl.NumberFormat().format(Math.round(career.medianSalary))}</p>
-              </div>
-            </div>
-          </div>
-
+          <SubCardBlock medianSalary={career.medianSalary}/>
           {/*Second and last sub block with Top Entry Level Education info */}
-          <div className="subCard-block">
-            {/*<div className="block-header">
-              <div className="icon-container">
-                <ion-icon name="school"></ion-icon>
-              </div>
-              <p className="header-block-text">Top Entry-level Education</p>
-              </div>*/}
-              <SubCardHeader salary={false}/>
-            <div className="block-content">
-              {topEntryLevelEducation.map((education, index) => {
-                return <EducationLevel key={index} education={education}/>;
-              })}
-            </div>
-          </div>
-
+          <SubCardBlock topEntryLevelEducation={topEntryLevelEducation}/>
         </div>
 
         <img className="img-container" src={career.thumbnailUrl}/>

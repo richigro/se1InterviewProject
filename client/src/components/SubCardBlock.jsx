@@ -6,9 +6,13 @@ import React from 'react';
 import SubCardHeader from './SubCardHeader';
 import SubCardContent from './SubCardContent';
 
-const SubCardBlock = () => {
+const SubCardBlock = ({ medianSalary, topEntryLevelEducation }) => {
+ 
   return (
-    <div></div>
+    <div className="subCard-block">
+      <SubCardHeader medianSalary={medianSalary}/>
+      <SubCardContent medianSalary={medianSalary} topEntryLevelEducation={topEntryLevelEducation}/>
+    </div>
   );
 };
 
