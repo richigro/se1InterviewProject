@@ -1,7 +1,10 @@
 import React from 'react';
 
 //Stylesheets
+import './EducationLevelContent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 //Components
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
@@ -10,7 +13,9 @@ const EducationLevelContent = ({ education }) => {
   return (
     <div className="education-block">
       <p className="education-level-text">{education.level}</p>
-      <ProgressBar variant="danger" now={percentage}/>
+      <div className="percentage-bar-container">
+        <ProgressBar className="education-percentage-bar" variant="danger" now={percentage}/>
+      </div>
       <p className="percentage-number">{percentage}%</p>
     </div>
   );

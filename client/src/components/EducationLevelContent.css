@@ -1,0 +1,29 @@
+.education-block {
+  display: flex;
+ width: 600px;
+ min-width: 300px;
+}
+
+.education-level-text {
+  border: 1px solid red;
+  text-align: left;
+  width: 41%;
+  margin: 0;
+  max-width: 250px;
+
+}
+
+.education-percentage-bar {
+  /* width: 50px; */
+  height: 1px;
+  margin-left: 20px;
+}
+.percentage-bar-container {
+  width: 30%;
+}
+
+.percentage-number {
+  margin: 0;
+  margin-left: 10px;
+  width: 9%;
+}

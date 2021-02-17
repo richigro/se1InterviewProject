@@ -8,10 +8,40 @@
   background-color: white;
 }
 
+.card:first-child {
+  margin-top: 65px;
+}
+
+.card-content {
+  display: flex;
+  border: 3px solid pink;
+}
+
+.career-title {
+  border: 1px solid red;
+  color: rgb(34, 34, 238);
+  font-weight: 600;
+}
+
+.career-desc {
+  border: 1px solid blue;
+}
+
 .img-container {
   width: 150px;
   height: 150px;
   border-radius: 6px;
   /* padding: 20px 10px; */
   border: 1px solid green;
+}
+
+.subCard-block-container {
+  display: flex;
+  border: 2px solid green;
+}
+
+.subCard-block {
+  border: 1px solid purple;
+  display: inline-block;
+  margin: 0 10px;
 }

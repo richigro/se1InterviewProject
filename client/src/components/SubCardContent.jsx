@@ -1,5 +1,8 @@
 import React from 'react';
 
+//Stylesheets
+import './SubCardContent.css';
+
 //Components
 import EducationLevelContent from './EducationLevelContent';
 import SalaryContent from './SalaryContent';
@@ -20,7 +23,7 @@ const SubCardContent = ({ medianSalary, topEntryLevelEducation }) => {
   }
   
   return (
-    <div>
+    <div className="block-content">
       {content}
     </div>
   );
