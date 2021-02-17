@@ -4,6 +4,9 @@ import data from '../dist/InterviewProject_CareerData.json';
 //imported components
 import Card from './components/Card';
 
+//stylesheets
+import './App.css';
+
 
 
 const App = () => {
@@ -11,7 +14,8 @@ const App = () => {
   const [careerObjects, setCareerObjects] = useState(data.data);
   console.log("career object: ", careerObjects);
   return (
-    <div>
+    <div className="app-container">
+    
       <ul>
         {
           Object.keys(careerObjects).map((career, index, array) => {

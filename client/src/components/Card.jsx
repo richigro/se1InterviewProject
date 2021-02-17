@@ -1,5 +1,8 @@
 import React from 'react';
 
+//stylesheets
+import './Card.css';
+
 const Card = ({ career }) => {
   console.log("career: ", career);
   // filters out education levels where the percentage is zero and return a new array and saved into variable
@@ -11,10 +14,12 @@ const Card = ({ career }) => {
   }).sort((a,b) => b.percent - a.percent).slice(0,3);
   console.log("top: ", topEntryLevelEducation);
   return (
-    <div>
+    <div className="card">
+
       <h2>{career.title}</h2>
       <p>{career.description}</p>
       <img className="img-container" src={career.thumbnailUrl}/>
+      
     </div>
   );
 };
