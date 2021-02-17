@@ -76,9 +76,28 @@
       .subCard-block {
         margin-left: 0;
       }
-      @media (max-width: 480px){
 
-      } 
+      @media (max-width: 400px) {
+        .card {
+          width: 320px;
+        }
+        .card-content {
+          /* background-color: olive; */
+        }
+        .career-title {
+          width: 290px;
+          margin: 0;
+        }
+
+        .career-desc {
+          width: 290px;
+          margin: 0;
+          
+        }
+        .subCard-block {
+          width: 290px;
+        }
+      }
     }
   }
 }
