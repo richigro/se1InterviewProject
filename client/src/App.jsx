@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import data from '../dist/InterviewProject_CareerData.json';
 
+//imported components
+import Card from './components/Card';
+
 
 
 const App = () => {
@@ -12,7 +15,7 @@ const App = () => {
       <ul>
         {
           Object.keys(careerObjects).map((career, index, array) => {
-            return <h1 key={index}>Hello</h1>;
+            return <Card key={index}/>;
           })
         }
       </ul>
