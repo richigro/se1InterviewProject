@@ -1,7 +1,8 @@
 .education-block {
   display: flex;
- width: 600px;
- min-width: 300px;
+  align-items: center;
+  width: 600px;
+  min-width: 300px;
 }
 
 .education-level-text {
@@ -10,16 +11,29 @@
   width: 41%;
   margin: 0;
   max-width: 250px;
+}
 
+/* Overwritting the bootstrap css styles to make
+    progress bar look like png image
+*/
+.progress {
+  height: 8px !important;
+  border-radius: 0 !important;
+}
+
+.progress-bar {
+  background-color: #c52a51 !important;
+}
+
+.percentage-bar-container {
+  width: 30%;
+  /* border: 1px solid blue; */
 }
 
 .education-percentage-bar {
   /* width: 50px; */
-  height: 1px;
+  /* height: 100%; */
   margin-left: 20px;
-}
-.percentage-bar-container {
-  width: 30%;
 }
 
 .percentage-number {
