@@ -8,8 +8,9 @@
   margin-bottom: 20px;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
+  box-shadow: 0 0 5px 1px #dbdad9;
 }
 
 .card:first-child {
@@ -18,37 +19,41 @@
 
 .card-content {
   display: flex;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
 }
 
 .career-title {
-  border: 1px solid red;
-  color: rgb(34, 34, 238);
+  /* border: 1px solid red; */
+  color: #1964eb;
   font-weight: 600;
+  font-size: 25px;
 }
 
 .career-desc {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  color: #203a50;
+  font-size: 16px;
 }
 
 .img-container {
-  border-radius: 6px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .image {
   width: 150px;
   height: 150px;
   padding: 10px;
+  border-radius: 10%;
 }
 
 .subCard-block-container {
   display: flex;
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  color: #203a50;
 }
 
 .subCard-block {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   display: inline-block;
   margin-left: 10px;
 }
@@ -81,9 +86,7 @@
         .card {
           width: 320px;
         }
-        .card-content {
-          /* background-color: olive; */
-        }
+        
         .career-title {
           width: 290px;
           margin: 0;

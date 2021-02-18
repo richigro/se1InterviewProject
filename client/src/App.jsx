@@ -41,8 +41,8 @@ const App = () => {
     <div className="app-container">
       <div>
         {
-          Object.keys(careerObjects).map((career, index, array) => {
-            return <Card key={array[index]} career={careerObjects[career]}/>;
+          Object.keys(careerObjects).map((career) => {
+            return <Card key={career} career={careerObjects[career]}/>;
           })
         }
       </div>

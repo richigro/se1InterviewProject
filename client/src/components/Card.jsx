@@ -19,7 +19,7 @@ const Card = ({ career }) => {
     <div className="card">
       <div className="card-content">
         <div>
-          <h2 className="career-title">{career.title}</h2>
+          <p className="career-title">{career.title}</p>
           <p className="career-desc">{career.description}</p>
           <div className="subCard-block-container">
             {/* First sub Block with Median Salary info*/}
