@@ -1,6 +1,5 @@
 .block-content {
-  /* border: 1px solid red; */
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .block-content div:first-child p:first-child {

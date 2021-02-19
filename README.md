@@ -1,5 +1,7 @@
 # SE1 Interview Project @Emsi
 
+![hello](./demo/projectImage.png)
+
 ## Provided Project Brief
 
 We want you to recreate a small portion of one of our tools, Career Coach. Attached is an image mockup of what the final product looks like as well as some JSON data to help you with the data you need to display.
@@ -52,7 +54,7 @@ If you finish quickly and want an extra challenge, work on making your design re
 ## Getting Started
 
 ```console
-    ~$ git clone 
+    ~$ git clone git@github.com:richigro/se1InterviewProject.git
     ~$ cd se1InterviewProject
     ~/se1InterviewProject$ npm i
     ~/se1InterviewProject$ npm run start

@@ -6,10 +6,9 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 20px;
-  padding: 10px 20px;
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 20px 20px 30px 20px;
   box-shadow: 0 0 5px 1px #dbdad9;
 }
 
@@ -19,24 +18,17 @@
 
 .card-content {
   display: flex;
-  /* border: 3px solid pink; */
 }
 
 .career-title {
-  /* border: 1px solid red; */
   color: #1964eb;
   font-weight: 600;
   font-size: 25px;
 }
 
 .career-desc {
-  /* border: 1px solid blue; */
   color: #203a50;
   font-size: 16px;
-}
-
-.img-container {
-  /* border: 2px solid green; */
 }
 
 .image {
@@ -48,12 +40,10 @@
 
 .subCard-block-container {
   display: flex;
-  /* border: 2px solid green; */
   color: #203a50;
 }
 
 .subCard-block {
-  /* border: 1px solid purple; */
   display: inline-block;
   margin-left: 10px;
 }
@@ -62,12 +52,19 @@
   .img-container {
     display: none;
   }
+  .image {
+    display: none;
+  }
 
   .card {
     width: fit-content;
     margin-left: 0;
   }
   @media (max-width: 600px){
+
+    .img-container {
+      display: none;
+    }
 
     .subCard-block-container {
       flex-direction: column;

@@ -11,7 +11,7 @@ import SalaryContent from './SalaryContent';
 const SubCardContent = ({ medianSalary, topEntryLevelEducation }) => {
   
   let content;
-  //decides which content should be rendered
+ 
   if(medianSalary && !topEntryLevelEducation){
     content = <SalaryContent medianSalary={medianSalary}/>;
   } else if(topEntryLevelEducation && !medianSalary){

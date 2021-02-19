@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 
 //JSON file data
-import data from '../dist/InterviewProject_CareerData.json';
+// import data from '../dist/InterviewProject_CareerData.json';
 
 //imported components
 import Card from './components/Card';
@@ -34,8 +34,6 @@ const App = () => {
       console.error("Error with promise", err);
     });
   };
-
-  console.log("career object: ", careerObjects);
   
   return (
     <div className="app-container">
