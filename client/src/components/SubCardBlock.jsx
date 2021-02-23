@@ -1,15 +1,10 @@
 import React from 'react';
 
-//Components
-import SubCardHeader from './SubCardHeader';
-import SubCardContent from './SubCardContent';
-
-const SubCardBlock = ({ medianSalary, topEntryLevelEducation }) => {
+const SubCardBlock = (props) => {
  
   return (
     <div className="subCard-block">
-      <SubCardHeader medianSalary={medianSalary}/>
-      <SubCardContent medianSalary={medianSalary} topEntryLevelEducation={topEntryLevelEducation}/>
+      {props.children}
     </div>
   );
 };

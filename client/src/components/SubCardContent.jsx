@@ -3,28 +3,11 @@ import React from 'react';
 //Stylesheets
 import './SubCardContent.css';
 
-//Components
-import EducationLevelContent from './EducationLevelContent';
-import SalaryContent from './SalaryContent';
-
-
-const SubCardContent = ({ medianSalary, topEntryLevelEducation }) => {
-  
-  let content;
- 
-  if(medianSalary && !topEntryLevelEducation){
-    content = <SalaryContent medianSalary={medianSalary}/>;
-  } else if(topEntryLevelEducation && !medianSalary){
-    content = topEntryLevelEducation.map((education, index) => {
-      return <EducationLevelContent key={index} education={education}/>;
-    });
-  } else {
-    content = <h1>There was an error</h1>;
-  }
+const SubCardContent = (props) => {
   
   return (
     <div className="block-content">
-      {content}
+      {props.children}
     </div>
   );
 };

@@ -1,14 +1,16 @@
 .education-block {
   display: flex;
   align-items: center;
-  min-width: 380px;
+  /* min-width: 380px; */
+  width: 100%;
 }
 
 .education-level-text {
   text-align: left;
-  width: 51%;
+  width: 70%;
   margin: 0;
-  width: 400px;
+  /* width: 400px; */
+  display: flex;
 }
 
 .progress {
@@ -22,7 +24,8 @@
 }
 
 .percentage-bar-container {
-  width: 40%;
+  width: 20%;
+  /* display: flex; */
 }
 
 .education-percentage-bar {
@@ -32,6 +35,8 @@
 .percentage-number {
   margin: 0;
   margin-left: 10px;
+  width: 10%;
+  display: flex;
 }
 
 @media (max-width: 400px) {

@@ -10,6 +10,7 @@
   background-color: #ffffff;
   padding: 20px 20px 30px 20px;
   box-shadow: 0 0 5px 1px #dbdad9;
+  display: flex;
 }
 
 .card:first-child {
@@ -24,6 +25,7 @@
   color: #1964eb;
   font-weight: 600;
   font-size: 25px;
+  display: flex;
 }
 
 .career-desc {
